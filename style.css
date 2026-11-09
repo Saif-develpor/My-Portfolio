@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.h{
+    color:white;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("images/backgr.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+    text-align: center;
+    padding: 100px 20px;
+}
+/* Home */
+
+
+#home h1 {
+    font-size: 40px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+.card {
+    background-color: lightgray;
+    padding: 30px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 28px;
+        
+    }
+    #home{
+         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("images/backgr.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 300px;
+    text-align: center;
+    padding: 75px 15px;
+    }
+
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+#about {
+    padding: 40px 20px;
+}
